@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DS2505 Demo Site - HTML Text Formatting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <h1>HMTL Formatting tags</h1>
+    <p>This page demonstrates the various HTML text formating tags</p>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <h2><u>Updating, Emphasizing and Shifting text</u></h2>
+    <p>This text is <b>displayed in bold.</b><br />
+        This text is <i>displayed in italics.</i><br />
+        This tect is <u>underlined</u><br />
+        This tect is <small>displayed smaller</small><br />
+        This is an example of <del>deleted</del>, and <ins>inserted</ins>text.<br />
+        This is an example of <sub>subscript text.</sub><br />
+        This is an example of <sup>superscript text.</sup><br />
+        This is an example of <mark>highlighted</mark> text.<br />
+    </p>
+
+    <h3 class="section-heading">A Simple C Program</h3>
+    <code>
+        //First C program to display "Hello World!"<br/>
+        #include &lt;stdio.h&gt;<br/>
+        //main function begins program execution<br/>
+        void main()<br/>
+        {<br/>
+        <blockquote>printf("Hello World!");<br/></blockquote>
+        }
+    </code>
+    <p>The program outputs/displays...</p>
+    <samp>Hello World!</samp>
+    <footer>
+        DS 2505 Copyright &copy 2022 - 
+        <span id="currYear">
+            <script async defer>
+            document.getElementById('currYear').innerHTML = new Date().getFullYear();
+            </script>
+        </span>
+    </footer>
+</body>
+</html>
