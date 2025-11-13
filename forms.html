@@ -7,7 +7,64 @@
 </head>
 <body>
     <h1>HTML Forms</h1>
-    <p>Definition of a HTML form</p>
+    <p>A HTML form is an interactive tool used in your webpage that is made up of various controls used to collect/obtain data from your website's visitors/users. The information is then validated, then sent to the server for further processing and/or storage. Exaples of commonly used forms are registration/sign up forms and login/sign in forms</p>
+    <p>An example of a student registration for for EICN is given below: </p>
+    <form id="frmRegister" method="post" accept-charset="UTF-8">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <p>
+                <label for="txtNames">Names *:</label>
+                <input type="text" id="txtNames" autofocus required form="frmRegister"
+                placeholder="Your Name" title="Please enter your names" tabindex="10"/>
+            </p>
+            <p>
+                <label for="dtpBirthDate">Birth Date *:</label>
+                <input type="date" id="dtpBirthDate" required form="frmRegister"
+                placeholder="mm-dd-yyyy" title="Please enter your date of birth" tabindex="20"/>
+            </p>
+            <p>
+                <label>Gender *:</label><br/>
+                <input type="radio" id="rdMale" required form="frmRegister"
+                placeholder="Gender" title="Male Gender" tabindex="30"/>
+                <label for="rdoMale">Male </label>&nbsp;&nbsp;;&nbsp;&nbsp;
+                <input type="radio" id="rdFemale" required form="frmRegister"
+                placeholder="Gender" title="Female Gender" tabindex="40"/>
+                <label for="rdoFemale">Female </label>
+            </p>
+            <p>
+                <label for="txtPhone">Phone No. :</label><br/>
+                <input type="tel" id="txtPhone" required form="frmRegister"
+                placeholder="+254 712 345678" title="Please enter your phone number" tabindex="50"/>
+            </p>
+            <p>
+                <label for="txtEmail">Email :</label><br/>
+                <input type="email" id="txtEmail" required form="frmRegister"
+                placeholder="me@email.com" title="Please enter your email" tabindex="60"/>
+            </p>
+            <p>
+                <label for="txtPassword">Password :</label><br/>
+                <input type="text" id="txtPassword" required form="frmRegister"
+                placeholder="secret pass" title="Please enter your password" tabindex="70"/>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Message Details</legend>
+            <p>
+                <label for="txtSubject">Subject* :</label><br/>
+                <input type="text" id="txtSubject" required form="frmRegister"
+                placeholder="Message subject" title="Please enter your message subject" tabindex="80"/>
+            </p>
+            <p>
+                <label for="txtMessage">Message* :</label><br/>
+                <textarea id="txtMessage" required form="frmRegister" required
+                placeholder="Message details" title="Please enter your message here" tabindex="90"></textarea>
+            </p>
+            <p>
+                <input type="submit" id="btnSubmit" value="Submit"tabindex="100" value="Submit" form="frnRegister" title="Submit registration details">
+                <input type="reset" value="Reset" tabindex="110" value="Reset" form="frnRegister" title="Clear all fields">
+            </p>
+        </fieldset>
+    </form>
     <footer>
         DS 2505 Copyright &copy 2022 - 
         <span id="currYear">
